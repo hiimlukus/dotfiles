@@ -1,0 +1,18 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/alex-courtis/way-displays/refs/heads/master/schema/cfg-1.0.0.yaml
+ARRANGE: ROW
+ALIGN: TOP
+ORDER:
+  - DP-1
+  - HDMI-A-1
+SCALING: TRUE
+AUTO_SCALE: TRUE
+AUTO_SCALE_MIN: 1
+AUTO_SCALE_MAX: -1
+MODE:
+  - NAME_DESC: BNQ ZOWIE XL LCD EBR1M00697SL0 (DP-1)
+    WIDTH: 1920
+    HEIGHT: 1080
+    HZ: 144
+CALLBACK_CMD: notify-send "way-displays ${CALLBACK_LEVEL}" "${CALLBACK_MSG}"
+LOG_THRESHOLD: INFO
+

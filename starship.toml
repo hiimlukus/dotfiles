@@ -1,0 +1,54 @@
+# Begin config
+
+# In case git sucks my cock
+command_timeout = 1000
+
+# No newline
+add_newline = false
+
+# Prompt format
+format = " $directory$git_branch$git_status$character"
+right_format = "$status$hostname"
+
+# Shortened directories
+[directory]
+truncation_length = 1
+fish_style_pwd_dir_length = 1
+style = "green"
+
+# Hostname
+[hostname]
+format = "[@$hostname]($style)"
+style = "fg:237"
+ssh_only = false
+
+# Character following dir
+[character]
+format = "$symbol "
+success_symbol = "[>](none)"
+error_symbol = "[>](none)"
+
+# Exit codes
+[status]
+format = "[$status]($style) "
+disabled = false
+symbol = ""
+style = "bold red"
+recognize_signal_code = true
+
+# Git status
+[git_status]
+format = "$all_status "
+untracked = "[?](bold cyan)"
+modified = "[!](bold blue)"
+renamed = "[>](bold magenta)"
+deleted = "[-](bold red)"
+diverged = "[#](bold yellow)"
+
+# Git branch
+[git_branch]
+style="none"
+format = "$symbol$branch"
+
+[fill]
+symbol = ' '
